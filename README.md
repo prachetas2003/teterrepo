@@ -3,7 +3,7 @@
 A small ceramics studio in Nørrebro, Copenhagen. A public catalog and commission desk.
 
 - `web/`: Vite, React, React Router; Fraunces and Outfit typography, locally drawn SVG ceramics.
-- `api/`: Express, TypeScript, Prisma and PostgreSQL. Startup transactionally applies committed SQL migrations with an advisory lock and checksum ledger, then idempotently seeds eight pieces. Prisma uses its JavaScript engine and Postgres adapter.
+- `api/`: Express, TypeScript, Prisma and PostgreSQL. ShipFix applies the SQL in `prisma/migrations` before startup; startup only idempotently seeds eight pieces and starts the server. Prisma uses its JavaScript engine and Postgres adapter.
 
 ## Deployment
 
